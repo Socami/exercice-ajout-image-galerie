@@ -29,11 +29,21 @@ function ajouterImage() {
   <h2>Total d'images : {{ imageCompter }}</h2>
 
   <p>Aucune image ajoutée</p>
-
-  <div v-for="image in images">
+<div class="images">
+    <div v-for="image in images">
     <img :src="image" width="150" />
   </div>
+</div>
+
 
 </template>
 
-<style scoped></style>
+<style scoped>
+img{
+  border-radius: 10px;
+}
+.images{
+  display: flex;
+  gap: 10px;
+}
+</style>
