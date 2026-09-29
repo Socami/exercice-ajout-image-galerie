@@ -1,38 +1,25 @@
-# EvaluationVuejsJoe
+# Ta Galerie
 
-This template should help get you started developing with Vue 3 in Vite.
+Petite application Vue.js 3 qui affiche une galerie d'images à partir de leurs URL.
 
-## Recommended IDE Setup
+## Fonctionnalités
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Ajouter une image en collant son URL puis en cliquant sur « Ajouter »
+- Les URL vides ne sont pas ajoutées
+- Affichage du nombre total d'images
 
-## Recommended Browser Setup
+## Notions Vue utilisées
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- `ref` pour les données réactives (l'URL tapée et la liste des images)
+- `v-model` pour relier le champ de saisie à la variable `newUrl`
+- `@click` pour lancer la fonction `ajouterImage` au clic
+- `v-for` pour afficher chaque image de la liste
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Lancer le projet
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Puis ouvrir http://localhost:5173 dans le navigateur.
